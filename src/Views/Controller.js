@@ -176,7 +176,7 @@ const Controller = () => {
       </Grid>
       <div className={`modal ${modal ? "active" : ""}`}>
         <Form onSubmit={subMit} style={{
-          width: '80%',
+          width: '90%',
           maxWidth: 450,
           backgroundColor: '#fff',
           padding: '20px 25px',
