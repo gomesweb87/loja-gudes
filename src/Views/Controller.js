@@ -85,7 +85,7 @@ const Controller = () => {
   return (
     <Container>
       <Title>
-        Controler de Entrada e Saida
+        Controler de Entrada e Saida (GUEDES CONTRUÇÔES)
       </Title>
       <Grid>
         <Left>
