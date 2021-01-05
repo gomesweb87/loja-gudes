@@ -98,7 +98,10 @@ const Controller = () => {
           </Pdf>
         </Left>
         <Right ref={ref}>
-          <h2>{`Caixa do dia ${dia}`}</h2>
+          <h2 style={{
+            fontSize: 18,
+            fontWeight: 'normal'
+          }}>{`Caixa do dia ${dia}`}</h2>
           <div className="context">
             <Table hover>
               <caption> Entradas</caption>
