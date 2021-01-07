@@ -22,7 +22,7 @@ const Controller = () => {
     data: dia,
     descricao: '',
     valor: 0,
-    entra: 1
+    entra: 0
   })
 
   const onChanger = (e) => {
@@ -47,7 +47,6 @@ const Controller = () => {
               setSaida(e => [...e, item])
             } else {
               setValorEntrada(valor => valor + item.valor)
-
               setEntrada(e => [...e, item])
             }
 
