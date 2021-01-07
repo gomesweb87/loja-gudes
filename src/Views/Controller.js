@@ -22,7 +22,7 @@ const Controller = () => {
     data: dia,
     descricao: '',
     valor: 0,
-    entra: 0
+    entra: 1
   })
 
   const onChanger = (e) => {
@@ -72,6 +72,13 @@ const Controller = () => {
       if (response.data.controle.entrada === 0) {
         setValorSaida(valor => valor + response.data.controle.valor)
         setSaida(e => [...e, response.data.controle])
+        setControle({
+          data: dia,
+          descricao: '',
+          valor: 0,
+          entra: 1
+        })
+        toggle()
       } else {
         setValorEntrada(valor => valor + response.data.controle.valor)
         setEntrada(e => [...e, response.data.controle])
