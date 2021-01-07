@@ -124,7 +124,7 @@ const Controller = () => {
                 {entrada.length > 0 ? entrada.map((tr, index) => {
                   return (
                     <tr key={index + 1}>
-                      <td>{tr.cod}</td>
+                      <td>{index + 1}</td>
                       <td>{tr.descricao}</td>
                       <td>{tr.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     </tr>
